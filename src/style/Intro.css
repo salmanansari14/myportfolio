@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imag {
+  border-radius: 30px;
+  width: 193px;
+  height: 193px;
+  /* height: inherit; */
+}
+
+.maincom {
+  /* border: 1px solid rgb(160, 160, 160); */
+  /* padding: 30px 230px; */
+  /* width: 700px; */
+  width: 70%;
+  margin: 50px auto;
+  align-items: center;
+}
+
+
+.m {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 5px;
+}
+
+.mh {
+  margin: 35px;
+  /* text-align: center; */
+}
+
+.m h1 {
+  margin: 0;
+  /* font-size: 2.6rem; */
+}
+
+.m p {
+  margin: 0;
+}
+
+.media-icons {
+  margin: 5px;
+  font-size: 35px;
+  color: rgb(255, 128, 0);
+}
+
+.ab h1 {
+  margin: 10px 0px;
+  margin-top: 0;
+}
+
+@media(max-width: 830px) {
+  .imag {
+    /* border: 5px solid rgb(0, 0, 0); */
+    /* display: block; */
+    margin: 2px auto;
+
+  }
+
+  .mh {
+    margin: 35px;
+    text-align: center;
+    display: block;
+    margin: 34px auto;
+  }
+
+  .imag {
+    width: 110px;
+    height: 110px;
+    border-radius: 30px;
+    /* height: inherit; */
+  }
+
+  .maincom {
+    /* border: 1px solid rgb(160, 160, 160); */
+    /* padding: 30px 230px; */
+    /* width: 700px; */
+    width: 95%;
+    margin: 10px auto;
+    align-items: center;
+  }
+}
+.locfont{
+  color: rgb(55, 67, 98);
+  font-size: 25px;
+  margin-left: 10px;
+}
+.loc{
+  font-size: 20px;
+}

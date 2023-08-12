@@ -9,9 +9,10 @@ app.use(express.json());
 // dotenv.config();
 
 mongoose
-    .connect("mongodb://0.0.0.:27017/portfolio", {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
+    // .connect("mongodb://0.0.0.:27017/portfolio", {
+    .connect("mongodb+srv://salmanansari1409:Salman1%40@cluster0.t8a6cmf.mongodb.net/portfolio", {
+        // useNewUrlParser: true,
+        // useUnifiedTopology: true,
     })
     .then(() => {
         console.log("db connection successful");

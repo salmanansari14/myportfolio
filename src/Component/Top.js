@@ -1,7 +1,7 @@
 import '../style/Top.css'
 import { useState } from 'react';
 // import '../App.css
-// import { link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Top() {
     const [click, setShowNav] = useState(false);
@@ -15,15 +15,15 @@ function Top() {
                 <div className={click ? "hednav hednavmob" : "hednav"}>
                     <div>
                         <a target="_blank" href="https://drive.google.com/file/d/1lNrUB5VCygTJFq9JsNcocwv-Ie8YxrNx/view?usp=drivesdk">
-                        <button className='btnn'>RESUME ✍</button>
+                            <button className='btnn'>RESUME ✍</button>
                         </a>
                     </div>
                     <nav>
                         <ul className='ull'>
-                            <li className="lin"> <a href="/myortfolio">  HOME </a></li>
-                            <li className="lin"> <a href="/About">  ABOUT</a></li>
-                            <li className="lin"> <a href="/Services"> SERVICES</a></li>
-                            <li className="lin"> <a htmlFor="Contact" href="/Contact">  CONTACT</a></li>
+                            <li className="lin"> <Link to="/myportfolio">  HOME </Link></li>
+                            <li className="lin"> <Link to="/About">ABOUT</Link></li>
+                            <li className="lin"> <Link to="/Services">SERVICES</Link></li>
+                            <li className="lin"> <Link htmlFor="Contact" to="/Contact">CONTACT</Link></li>
                         </ul>
                     </nav>
                 </div>
@@ -38,7 +38,7 @@ function Top() {
                     </div>
                 </div>
                 <div className="hedfoot">
-                    <a href="/intro"><i className=" fa-solid fa-chevron-down"></i></a>
+                    <Link to="/About"><i className=" fa-solid fa-chevron-down"></i></Link>
                 </div>
             </div>
         </div>

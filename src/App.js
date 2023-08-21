@@ -7,7 +7,8 @@ import Educa from './Component/Educa';
 import Skill from './Component/Skill';
 import Experience from './Component/Experience';
 import Contact from './Component/Contact';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Routes, Route } from "react-router-dom";
+import { Fragment } from 'react';
 
 
 function App() {
@@ -73,7 +74,6 @@ function App() {
       second: 'Competitive Programming ',
       third: 'Video Editing',
     }
-
   ]
 
   let ExperienceDetails = [
@@ -91,15 +91,36 @@ function App() {
       List1: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit rerum remsint.',
       List2: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. tus sint.',
     }
-
   ]
 
+  // "react-router-dom": "^5.3.4",
   return (
     <div>
-{/* basename='/Portfolioweb' */}
-      <BrowserRouter  >
-        <Top/>
+      <BrowserRouter
+        basename='/myportfolio'>
+        <Top />
+        <Routes>
+          <Route path="/myportfolio"
+            element={[<Intro />,
+            <Educa EducationDetails={EducationDetails} />,
+            <Skill skillsDetails={skillsDetails} />,
+            <Experience />,
+            <Contact />]}
+          />
 
+          <Route path="/About" element={<Intro />} />
+
+          <Route path="/Services" element={<Skill skillsDetails={skillsDetails} />} />
+
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+
+        <Foot />
+      </BrowserRouter>
+
+      {/* <BrowserRouter
+        basename='/myportfolio'>
+        <Top />
         <Switch>
           <Route exact path="/myportfolio">
             <Intro />
@@ -123,7 +144,7 @@ function App() {
         </Switch>
 
         <Foot />
-      </BrowserRouter>
+      </BrowserRouter> */}
     </div>
   );
 }

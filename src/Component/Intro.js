@@ -4,7 +4,7 @@ function Intro() {
     return (
         <div htmlFor="Top" className="maincom">
             <div className='m'>
-                <img src={require('../Images/fff.jpeg')} alt="salman" className='imag' />
+                <img src={require('..//Images/fff.jpeg')} alt="salman" className='imag' />
                 <span className='mh'>
                     <h1>MOHD SALMAN ANSARI</h1>
                     <p className='loc'>UP, INDIA

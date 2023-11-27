@@ -5,7 +5,7 @@ function Educom({ EducationDetails }) {
             <div className='edu'>
                 <div className='elem item1'>
                     {/* <img src  require={EducationDetails.Image} alt="salman" className='image' /> */}
-                    <img src={require('../Images/rrr.png')} alt="salman" className='image' />
+                    <img src={require( `../Images/${EducationDetails.Image}`)} alt="salman" className='image' />
                 </div>
                 <div className='elem item2'>
                     <h1>{EducationDetails.ClgName}</h1>

@@ -8,7 +8,6 @@ function Top() {
     return (
         <div>
             <div className="App hed">
-
                 <div className='nbar'>
                     <i className="fa-solid fa-bars" onClick={() => setShowNav(!click)}></i>
                 </div>
